@@ -77,3 +77,1072 @@ body {
     border-bottom: 0;
   }
 }
+
+/* ===================================================
+   Import Section
+   =================================================== */
+
+@import url(../bower_components/font-awesome/css/font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:400,700);
+@import url(../styles/animate.css);
+
+
+/*
+    a {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 1.125em;
+        color: inherit;
+    }
+*/
+
+
+/* ===================================================
+   Icon-Font Section
+   =================================================== */
+
+@import url(../styles/style.css);
+
+
+/* Font-Awesome Icon Usage Example:
+
+    <p><i class="icon icon-camera-retro icon-lg"></i> icon-camera-retro</p>
+
+*/
+
+
+/* ---------------------------------------------------
+   NOTE & EXAMPLE
+   --------------------------------------------------- */
+
+/*  
+    - Please refrain from using the px value except for font sizes.
+
+    - Please adhere to the "Style Structure Template" below.
+*/
+
+
+/* Style Structure Template:
+
+    .class, (or) #id {
+        sizing: (i.e. height and width, this is for postioning -
+                - an element in relation to the the page);
+        positioning: (i.e. all of your margins and paddings);
+                    visual styles: (i.e. color, font styles, and other non-structural -
+                    edits);
+
+    }
+
+    ***Example****
+
+                #id .class {
+                    width: 100%;
+                    margin: auto !important;
+                    background-color: blue;
+                    border-radius: 6px;
+                }
+
+    ***End***
+
+*/
+
+/* ---------------------------------------------------
+   /NOTE & EXAMPLE
+   --------------------------------------------------- */
+
+/* ===================================================
+   Main Styles
+   =================================================== */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: #ffffff;
+}
+
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 62px;
+  line-height: 68px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: #f37921;
+}
+
+h2 {
+  font-family: 'Lato', cursive;
+  letter-spacing: 0.015em;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  color: #56a2a2;
+}
+
+h3 {
+  font-family: 'Lato', cursive;
+  letter-spacing: 0.015em;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  color: #424143;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.015em;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  color: #424143;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.015em;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  color: #424143;
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.015em;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  color: #424143;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-weight: 300;
+  color: #424143;
+}
+
+b {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+  color: #56a2a2;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  font-size: inherit;
+  line-height: auto;
+  font-weight: inherit;
+  text-decoration: none !important;
+}
+
+address {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+  color: #424143;
+}
+
+hr {
+  border: solid 2px #f49325;
+}
+
+.emphasis {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+  color: #252525;
+}
+
+.muted-sm {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 6px;
+  color: #ffffff;
+}
+
+.muted-lg {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 6px;
+  color: #ffffff;
+}
+
+.mail-to {
+  font-weight: 600;
+  color: #56a2a2;
+}
+
+.mail-to:hover {
+  color: #26807f;
+}
+
+/*----- Content Inter-Section Vertical Spacing -----*/
+
+.margin-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0 !important;
+}
+
+.margin-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.margin-15 {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
+.margin-20 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.margin-30 {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.margin-40 {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+.margin-50 {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.margin-60 {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+
+.margin-70 {
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+}
+
+.margin-80 {
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+}
+
+.margin-90 {
+  margin-top: 90px !important;
+  margin-bottom: 90px !important;
+}
+
+.margin-100 {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+/*----- Colors -----*/
+
+.white {
+  color: #ffffff;
+}
+
+.black {
+  color: #000000;
+}
+
+.darker-gray {
+  color: #252525;
+}
+
+.dark-gray {
+  color: #424143;
+}
+
+.gray {
+  color: #b9b9b9;
+}
+
+.light-gray {
+  color: #e1e1e1;
+}
+
+.lighter-gray {
+  color: #f2f2f2;
+}
+
+.teal {
+  color: #56a2a2;
+}
+
+.dark-teal {
+  color: #26807f;
+}
+
+.orange {
+  color: #f37921;
+}
+
+.dark-orange {
+  color: #ed6927;
+}
+
+/*----- Well -----*/
+
+.well {
+  background: #f37921;
+  border: solid 6px #56a2a2;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(86, 162, 162, 0.35);
+  -moz-box-shadow: 0 8px 6px -6px rgba(86, 162, 162, 0.35);
+  -o-box-shadow: 0 8px 6px -6px rgba(86, 162, 162, 0.35);
+  box-shadow: 0 8px 6px -6px rgba(86, 162, 162, 0.35);
+}
+
+.well p {
+  font-weight: 400;
+}
+
+/* ===================================================
+   Global Styles
+   =================================================== */
+
+/* ---------------------------------------------------
+   NOTE & EXAMPLE
+   --------------------------------------------------- */
+
+/*  
+    - To create the h1's bottom border, PLEASE follow the following instructions.
+
+    - Copy and paste the following HTML into the applicable page directly under
+      the tag with the classes; col-lg, col-md, col-sm...
+
+   ---------------------------------------------------
+   HTML SNIPPET for a HEADER WITHOUT a SUB-HEADER
+   ---------------------------------------------------
+
+    <div class="row header">
+      <div id="header-box">
+        <h1 class="text-center">HEADER EXAMPLE TEXT CONTENT</h1>
+      </div>
+    </div>
+
+   ---------------------------------------------------
+   /HTML SNIPPET
+   ---------------------------------------------------
+
+   ---------------------------------------------------
+   HTML SNIPPET for a HEADER WITH a SUB-HEADER
+   ---------------------------------------------------
+
+      <div class="row header-sub">
+        <div id="header-box">
+          <h1 class="text-center">HEADER EXAMPLE TEXT CONTENT</h1>
+        </div>
+        <div id="header-box">
+          <h2 class="text-center">subHEADER EXAMPLE TEXT CONTENT</h2>
+        </div>
+      </div>
+
+   ---------------------------------------------------
+   /HTML SNIPPET
+   ---------------------------------------------------
+
+     - NOTE: The above snippets DO NOT work in the "About Page Team Section,"
+       as that section needed to be structured differently due to the full -
+       picture section directly below the header title.
+
+     - Edit the text content within the h1 tags as you see fit and enjoy.
+*/
+
+/* ---------------------------------------------------
+   /NOTE & EXAMPLE
+   --------------------------------------------------- */
+
+/* ===================================================
+   Animation Styles
+   =================================================== */
+
+@media (max-width: 767px) {
+  .animated {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;    
+  }
+}
+
+.delay1 {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+}
+
+.delay3 {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+}
+
+.delay4 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+
+.delay5 {
+  -webkit-animation-delay: 1.25s;
+  -moz-animation-delay: 1.25s;
+}
+
+.delay6 {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+}
+
+.delay7 {
+  -webkit-animation-delay: 1.75s;
+  -moz-animation-delay: 1.75s;
+}
+
+.delay8 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+
+.delay9 {
+  -webkit-animation-delay: 2.25s;
+  -moz-animation-delay: 2.25s;
+}
+
+.delay10 {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+}
+
+.note {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+}
+
+/* ===================================================
+   /Animation Styles
+   =================================================== */
+
+/* ===================================================
+   h1 & h2 Underline Styles
+   =================================================== */
+
+/* ---------------------------------------------------
+   NOTE & EXAMPLE
+   --------------------------------------------------- */
+
+/*  
+    - To create the h1's bottom border, PLEASE follow the following instructions.
+
+    - Copy and paste the following HTML into the applicable page directly under
+      the tag with the classes; col-lg, col-md, col-sm...
+
+   ---------------------------------------------------
+   HTML SNIPPET for a HEADER WITHOUT a SUB-HEADER
+   ---------------------------------------------------
+
+    <div class="row header">
+      <div id="header-box">
+        <h1 class="text-center">HEADER EXAMPLE TEXT CONTENT</h1>
+      </div>
+    </div>
+
+   ---------------------------------------------------
+   /HTML SNIPPET
+   ---------------------------------------------------
+
+   ---------------------------------------------------
+   HTML SNIPPET for a HEADER WITH a SUB-HEADER
+   ---------------------------------------------------
+
+      <div class="row header-sub">
+        <div id="header-box">
+          <h1 class="text-center">HEADER EXAMPLE TEXT CONTENT</h1>
+        </div>
+        <div id="header-box">
+          <h2 class="text-center">subHEADER EXAMPLE TEXT CONTENT</h2>
+        </div>
+      </div>
+
+   ---------------------------------------------------
+   /HTML SNIPPET
+   ---------------------------------------------------
+
+     - NOTE: The above snippets DO NOT work in the "About Page Team Section,"
+       as that section needed to be structured differently due to the full -
+       picture section directly below the header title.
+
+     - Edit the text content within the h1 tags as you see fit and enjoy.
+*/
+
+#header-box {
+  position: relative;
+  text-align: center;
+  height: auto;
+}
+
+#header-box .horizontal-line-1 {
+  position: relative;
+  top: 6rem;
+  left: 14rem;
+  border-top: 3px solid #f49325;
+}
+
+#header-box .horizontal-line-2 {
+  position: relative;
+  top: 6rem;
+  right: 14rem;
+  border-top: 3px solid #f49325;
+}
+
+#header-box h2 {
+  display: inline-block;
+  padding: 0px 0px 10px 0px;
+  border-bottom: solid 2px #56a2a2;
+}
+
+#header-box-inverse {
+  position: relative;
+  text-align: center;
+  height: auto;
+}
+
+#header-box-inverse h2 {
+  display: inline-block;
+  border-bottom: solid 2px #ffffff;
+}
+
+/* ===================================================
+   /h1 & h2 Underline Styles
+   =================================================== */
+
+/* ===================================================
+   Button Styles
+   =================================================== */
+
+/*  
+    - To create a "Call to Action" button, PLEASE follow the following instructions.
+
+    - Copy and paste the following HTML into the applicable place directly outside of
+      the div, which belongs to the parent elements.
+
+    - To change the color of the "Call to Action" button change the "a" tags class to:
+      button-orange or button-teal.
+
+   ---------------------------------------------------
+   HTML SNIPPET for a HEADER WITHOUT a SUB-HEADER
+   ---------------------------------------------------
+
+    <a id="button" class="button-orange" type="button">Book Now!</a>
+
+   ---------------------------------------------------
+   /HTML SNIPPET
+   ---------------------------------------------------
+*/
+
+#button {
+  display: block;
+  height: auto !important;
+  margin: 2rem;
+  padding: 14px 6px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 1px transparent;
+  border-radius: 4px;
+}
+
+#button-orange {
+  display: block;
+  height: auto !important;
+  margin: 2rem;
+  padding: 14px 6px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 3px #f37921;
+  border-radius: 4px;
+}
+
+#button-teal {
+  display: block;
+  height: auto !important;
+  margin: 2rem;
+  padding: 14px 6px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 3px #56a2a2;
+  border-radius: 4px;
+}
+
+#button-inner {
+  display: block;
+  height: 40px !important;
+  margin: 1rem;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+}
+
+#button-inline {
+  display: inline-block;
+  height: inherit !important;
+  margin: 0rem;
+  padding: 5px 7px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*----- Button changes color & animates -----*/
+
+.btn-text-white {
+  color: #ffffff;
+}
+
+.btn-text-white:hover {
+  color: #ffffff;
+}
+
+/* Orange button */
+
+.btn-orange {
+  background: #f37921;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s  ease-in-out;
+  -o-transition: background .2s  ease-in-out;
+  transition: background .2s  ease-in-out;
+}
+
+.btn-orange:hover {
+  background: #ed6927;
+}
+
+.btn-orange-animate {
+  color: #ffffff;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s  ease-in-out;
+  -o-transition: color .2s  ease-in-out;
+  transition: color .2s  ease-in-out;
+  background: #f37921;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s  ease-in-out;
+  -o-transition: background .2s  ease-in-out;
+  transition: background .2s  ease-in-out;
+}
+
+.btn-orange-animate:hover {
+  color: #56a2a2;
+  background: transparent;
+}
+
+/* Teal button */
+
+.btn-teal {
+  background: #56a2a2;
+  -webkit-transition: background 0.25s ease-in-out;
+  -moz-transition: background 0.25s ease-in-out;
+  -o-transition: background 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out;
+}
+
+.btn-teal:hover {
+  background: #26807f;
+}
+
+.btn-teal-animate {
+  color: #ffffff;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s  ease-in-out;
+  -o-transition: color .2s  ease-in-out;
+  transition: color .2s  ease-in-out;
+  background: #56a2a2;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s  ease-in-out;
+  -o-transition: background .2s  ease-in-out;
+  transition: background .2s  ease-in-out;
+}
+
+.btn-teal-animate:hover {
+  color: #f37921;
+  background: transparent;
+}
+
+
+/* ===================================================
+   /Button Styles
+   =================================================== */
+
+/* ===================================================
+   Navbar Styles
+   =================================================== */
+
+/* ===== Logo ===== */
+
+
+
+/* ===== Navbar ===== */
+
+.navbar-inverse {
+  background-color: #E8E8E8;
+  border-color: #E8E8E8;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #424143;
+  -webkit-transition: color 0.20s ease-in-out;
+  -moz-transition: color 0.20s ease-in-out;
+  -o-transition: color 0.20s ease-in-out;
+  transition: color 0.20s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #56a2a2;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #56a2a2;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #56a2a2;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #F5F5F5;
+  background: #F5F5F5;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #DDD;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #424143;
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000;
+    background-color: transparent;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000;
+    background-color: transparent;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+  }
+
+}
+
+.navbar-inverse .navbar-link {
+  color: #333;
+}
+
+.navbar-inverse .navbar-link:hover {
+  color: #000;
+}
+
+/* Navbar gets a bit higher */
+
+.navbar {
+  min-height: 65px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+  }
+}
+
+.navbar-form {
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+}
+
+.navbar-brand {
+  padding: 22.5px 15px;
+}
+
+.navbar-btn {
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+}
+
+.navbar-text {
+  margin-top: 22.5px;
+  margin-bottom: 22.5px;
+}
+
+.navbar-toggle {
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+}
+
+/* Navbar menu dropdown */
+
+.dropdown-menu {
+  background: rgba( 250, 250, 250, 1.00);
+  border: solid 1px transparent;
+  border-radius: 6px;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #424143;
+  -webkit-transition: color 0.20s ease-in-out;
+  -moz-transition: color 0.20s ease-in-out;
+  -o-transition: color 0.20s ease-in-out;
+  transition: color 0.20s ease-in-out;
+  background-color: transparent;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #56a2a2;
+}
+
+.dropdown-menu > li:last-child > a {
+  border-bottom: 0;
+}
+
+/* ===== Navbar Forms ===== */
+
+.navbar-nav .hide {
+  display: none;
+}
+
+.navbar-nav li#search {
+  position: relative;
+}
+
+.navbar-nav li#search i {
+  font-size: 18px;
+  color: #f37921;
+  -webkit-transition: color 0.20s ease-in-out;
+  -moz-transition: color 0.20s ease-in-out;
+  -o-transition: color 0.20s ease-in-out;
+  transition: color 0.20s ease-in-out;
+}
+
+.navbar-nav li#search:hover i {
+  color: #56a2a2;
+}
+
+.navbar-nav li#search .business-box {
+  position: absolute;
+  right: -155px;
+  top: 85px;
+  width: 250px;
+  padding: 10px;
+  background: #56a2a2;
+  background: rgba( 86, 162, 162, 0.5);
+  border: solid 1px transparent;
+  border-radius: 6px;
+}
+
+.navbar-nav li#search .catering-box {
+  position: absolute;
+  right: -40px;
+  top: 85px;
+  width: 250px;
+  padding: 10px;
+  background: #56a2a2;
+  background: rgba( 86, 162, 162, 0.5);
+  border: solid 1px transparent;
+  border-radius: 6px;
+}
+
+.navbar-nav li#search .catering-box input {
+  border-radius: 4px;
+}
+
+.navbar-nav li#search .search-box {
+  position: absolute;
+  right: 70px;
+  top: 85px;
+  width: 250px;
+  padding: 10px;
+  background: #56a2a2;
+  background: rgba( 86, 162, 162, 0.5);
+  border: solid 1px transparent;
+  border-radius: 6px;
+}
+
+/* ===================================================
+   Main Styles
+   =================================================== */
+
+#header .video-box {
+  position: relative;
+  width: 100% !important;
+  top: -20px;
+  left: 0px;
+}
+
+#download {
+  padding: 4rem;
+}
+
+#download img {
+  display: block;
+}
+
+#download .img-sm {
+  width: 65%;
+}
+
+#download .vert-center {
+  margin-top: 7rem;
+}
+
+/* ===================================================
+   /Main Styles
+   =================================================== */
+
+/* ===================================================
+   Header Styles
+   =================================================== */
+
+
+/* ===================================================
+   /Header Styles
+   =================================================== */
+
+/* ===================================================
+   Feature Styles
+   =================================================== */
+
+
+
+/* ===================================================
+   /Feature Styles
+   =================================================== */
+
+/* ===================================================
+   About Styles
+   =================================================== */
+
+
+/* ===================================================
+   /About Styles
+   =================================================== */
+
+/* ===================================================
+   Contact Styles
+   =================================================== */
+
+
+
+/* ===================================================
+   /Contact Styles
+   =================================================== */
+
+/* ===================================================
+   Footer Styles
+   =================================================== */
+
+
+
+/* ===================================================
+   /Footer Styles
+   =================================================== */
+
+
+
+
+
+
