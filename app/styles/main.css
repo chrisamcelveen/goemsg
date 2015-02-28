@@ -84,8 +84,6 @@ body {
 
 @import url(../bower_components/font-awesome/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two:400,700);
-@import url(../styles/animate.css);
 
 
 /*
@@ -173,32 +171,32 @@ html{
 }
 
 h1 {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 62px;
   line-height: 68px;
   letter-spacing: 0.03em;
-  font-weight: 400;
-  color: #f37921;
+  font-weight: 300;
+  color: #fff;
 }
 
 h2 {
-  font-family: 'Lato', cursive;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 0.015em;
   font-size: 44px;
   line-height: 50px;
   letter-spacing: 0.015em;
   font-weight: 300;
-  color: #56a2a2;
+  color: #fff;
 }
 
 h3 {
-  font-family: 'Lato', cursive;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 0.015em;
   font-size: 28px;
   line-height: 28px;
   letter-spacing: 0.015em;
   font-weight: 300;
-  color: #424143;
+  color: #fff;
 }
 
 h4 {
@@ -208,7 +206,7 @@ h4 {
   line-height: 28px;
   letter-spacing: 0.015em;
   font-weight: 300;
-  color: #424143;
+  color: #fff;
 }
 
 h5 {
@@ -218,7 +216,7 @@ h5 {
   line-height: 28px;
   letter-spacing: 0.015em;
   font-weight: 300;
-  color: #424143;
+  color: #fff;
 }
 
 h6 {
@@ -228,7 +226,7 @@ h6 {
   line-height: 28px;
   letter-spacing: 0.015em;
   font-weight: 300;
-  color: #424143;
+  color: #fff;
 }
 
 p {
@@ -236,8 +234,8 @@ p {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.015em;
-  font-weight: 300;
-  color: #424143;
+  font-weight: 100;
+  color: #fff;
 }
 
 b {
@@ -246,7 +244,7 @@ b {
   line-height: 22px;
   letter-spacing: 0.015em;
   font-weight: 600;
-  color: #56a2a2;
+  color: #fff;
 }
 
 a {
@@ -827,321 +825,45 @@ hr {
    Navbar Styles
    =================================================== */
 
-/* ===== Logo ===== */
+/* ===================================================
+   Navigation Styles
+   =================================================== */
 
 
-
-/* ===== Navbar ===== */
-
-.navbar-inverse {
-  background-color: #E8E8E8;
-  border-color: #E8E8E8;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-  text-transform: uppercase;
-  color: #424143;
-  -webkit-transition: color 0.20s ease-in-out;
-  -moz-transition: color 0.20s ease-in-out;
-  -o-transition: color 0.20s ease-in-out;
-  transition: color 0.20s ease-in-out;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: #56a2a2;
-  background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #56a2a2;
-  background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > .disabled > a,
-.navbar-inverse .navbar-nav > .disabled > a:hover,
-.navbar-inverse .navbar-nav > .disabled > a:focus {
-  color: #56a2a2;
-  background-color: transparent;
-}
-
-.navbar-inverse .navbar-toggle {
-  border-color: #F5F5F5;
-  background: #F5F5F5;
-}
-
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-  background-color: transparent;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #333;
-}
-
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-  border-color: #DDD;
-}
-
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-  color: #424143;
+#top-nav {
   background: transparent;
+  border: none;
+  border-radius: none;
 }
 
-@media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #080808;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #333;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #000;
-    background-color: transparent;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #000;
-    background-color: transparent;
-  }
-
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #444444;
-    background-color: transparent;
-  }
-
-}
-
-.navbar-inverse .navbar-link {
-  color: #333;
-}
-
-.navbar-inverse .navbar-link:hover {
-  color: #000;
-}
-
-/* Navbar gets a bit higher */
-
-.navbar {
-  min-height: 65px;
-}
-
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-top: 22.5px;
-    padding-bottom: 22.5px;
-  }
-}
-
-.navbar-form {
-  margin-top: 15.5px;
-  margin-bottom: 15.5px;
-}
-
-.navbar-brand {
-  padding: 22.5px 15px;
-}
-
-.navbar-btn {
-  margin-top: 15.5px;
-  margin-bottom: 15.5px;
-}
-
-.navbar-text {
-  margin-top: 22.5px;
-  margin-bottom: 22.5px;
-}
-
-.navbar-toggle {
-  margin-top: 15.5px;
-  margin-bottom: 15.5px;
-}
-
-/* Navbar menu dropdown */
-
-.dropdown-menu {
-  background: rgba( 250, 250, 250, 1.00);
-  border: solid 1px transparent;
-  border-radius: 6px;
-}
-
-.dropdown-menu > li > a {
-  padding: 10px 20px;
+#top-nav .nav a {
+  color: #fff;
+  background: none;
   font-size: 14px;
   font-weight: 300;
-  color: #424143;
-  -webkit-transition: color 0.20s ease-in-out;
-  -moz-transition: color 0.20s ease-in-out;
-  -o-transition: color 0.20s ease-in-out;
-  transition: color 0.20s ease-in-out;
-  background-color: transparent;
-  border-bottom: 1px solid #E5E5E5;
+  transition: background .25s linear;
+  -o-transition: background .25s linear;
+  -moz-transition: background .25s linear;
+  -webkit-transition: background .25s linear;
+  transition: color .25s linear;
+  -o-transition: color .25s linear;
+  -moz-transition: color .25s linear;
+  -webkit-transition: color .25s linear;
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  color: #56a2a2;
-}
-
-.dropdown-menu > li:last-child > a {
-  border-bottom: 0;
-}
-
-/* ===== Navbar Forms ===== */
-
-.navbar-nav .hide {
-  display: none;
-}
-
-.navbar-nav li#search {
-  position: relative;
-}
-
-.navbar-nav li#search i {
-  font-size: 18px;
-  color: #f37921;
-  -webkit-transition: color 0.20s ease-in-out;
-  -moz-transition: color 0.20s ease-in-out;
-  -o-transition: color 0.20s ease-in-out;
-  transition: color 0.20s ease-in-out;
-}
-
-.navbar-nav li#search:hover i {
-  color: #56a2a2;
-}
-
-.navbar-nav li#search .business-box {
-  position: absolute;
-  right: -155px;
-  top: 85px;
-  width: 250px;
-  padding: 10px;
-  background: #56a2a2;
-  background: rgba( 86, 162, 162, 0.5);
-  border: solid 1px transparent;
-  border-radius: 6px;
-}
-
-.navbar-nav li#search .catering-box {
-  position: absolute;
-  right: -40px;
-  top: 85px;
-  width: 250px;
-  padding: 10px;
-  background: #56a2a2;
-  background: rgba( 86, 162, 162, 0.5);
-  border: solid 1px transparent;
-  border-radius: 6px;
-}
-
-.navbar-nav li#search .catering-box input {
+#top-nav .nav a:hover,
+#top-nav .nav a:focus
+ {
+  color: rgba( 56, 56, 56, 1.00);
+  background: #fff;
   border-radius: 4px;
-}
-
-.navbar-nav li#search .search-box {
-  position: absolute;
-  right: 70px;
-  top: 85px;
-  width: 250px;
-  padding: 10px;
-  background: #56a2a2;
-  background: rgba( 86, 162, 162, 0.5);
   border: solid 1px transparent;
-  border-radius: 6px;
 }
 
-/* ===================================================
-   Main Styles
-   =================================================== */
 
-#header .video-box {
-  position: relative;
-  width: 100% !important;
-  top: -20px;
-  left: 0px;
+#map-box h1 {
+  color: #CC3399;
 }
-
-#download {
-  padding: 4rem;
-}
-
-#download img {
-  display: block;
-}
-
-#download .img-sm {
-  width: 65%;
-}
-
-#download .vert-center {
-  margin-top: 7rem;
-}
-
-/* ===================================================
-   /Main Styles
-   =================================================== */
-
-/* ===================================================
-   Header Styles
-   =================================================== */
-
-
-/* ===================================================
-   /Header Styles
-   =================================================== */
-
-/* ===================================================
-   Feature Styles
-   =================================================== */
-
-
-
-/* ===================================================
-   /Feature Styles
-   =================================================== */
-
-/* ===================================================
-   About Styles
-   =================================================== */
-
-
-/* ===================================================
-   /About Styles
-   =================================================== */
-
-/* ===================================================
-   Contact Styles
-   =================================================== */
-
-
-
-/* ===================================================
-   /Contact Styles
-   =================================================== */
-
-/* ===================================================
-   Footer Styles
-   =================================================== */
-
-
-
-/* ===================================================
-   /Footer Styles
-   =================================================== */
-
-
 
 
 
