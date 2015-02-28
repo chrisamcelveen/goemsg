@@ -841,6 +841,8 @@ hr {
   background: none;
   font-size: 14px;
   font-weight: 300;
+  border-radius: 4px;
+  border: solid 1px transparent;
   transition: background .25s linear;
   -o-transition: background .25s linear;
   -moz-transition: background .25s linear;
@@ -860,9 +862,52 @@ hr {
   border: solid 1px transparent;
 }
 
-
 #map-box h1 {
   color: #CC3399;
+}
+
+#list .group-box {
+  border-top: solid 4px #f37921;
+  border-radius: 4px;
+}
+
+#list .group ul {
+  list-style: none;
+  margin-left: -3em;
+}
+
+#list .group ul li {
+  display: block;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-top: solid 2px #f37921;
+  background: transparent;
+  border-radius: 2px;
+  transition: background .25s linear;
+  -o-transition: background .25s linear;
+  -moz-transition: background .25s linear;
+  -webkit-transition: background .25s linear;
+}
+
+#list .group ul li:hover,
+#list .group ul li:focus {
+  background: rgba( 122, 122, 122, 0.65);
+}
+
+#list .group ul li a {
+  padding: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #b9b9b9;
+  transition: color .25s linear;
+  -o-transition: color .25s linear;
+  -moz-transition: color .25s linear;
+  -webkit-transition: color .25s linear;
+}
+
+#list .group ul li a:hover,
+#list .group ul li a:focus {
+  color: #fff;
 }
 
 
